@@ -2,6 +2,7 @@
 <p> Idea inspired by buildinglink, a popular software used in residential and commericial buildings in urban areas </p>
 <strong> Tech Stack </strong>
 <ul>
+    <br>
   <b> Backend </b>
   <li> Node </li>
   <li> Express </li>
