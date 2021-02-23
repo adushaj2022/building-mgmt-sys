@@ -10,4 +10,5 @@
 </ul>
 
 <p> Admins are assigned to there corresponding building and have access to information about the residents of the building, the employees, and other building information </p>
-<small> Project is currently in phase 1, more features still need to be added</small>
+<br><br>
+<i> Project is currently in phase 1, more features still need to be added </i>
