@@ -5,6 +5,7 @@
   <li> Node </li>
   <li> Express </li>
   <li> MySQL </li>
+  <li> Redis </li>
   <li> React (Hooks) </li>
   <li> Chakra UI </li>
 </ul>
