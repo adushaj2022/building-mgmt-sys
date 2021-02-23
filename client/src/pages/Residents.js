@@ -45,6 +45,8 @@ const Residents = (props) => {
     }
   }, []);
 
+  console.log(user);
+
   return (
     <Wrapper>
       <Box shadow="md" borderWidth="1px" borderRadius="md" p={5}>

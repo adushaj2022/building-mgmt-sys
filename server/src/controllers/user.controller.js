@@ -1,8 +1,6 @@
-const { json } = require("express");
 const db = require("../config/connect");
 const bcrypt = require("bcrypt");
 const validator = require("../auth/validation");
-const e = require("express");
 
 const register = async (req, res) => {
   const { username, password } = req.body;
@@ -44,8 +42,6 @@ const register = async (req, res) => {
 };
 const login = (req, res) => {
   const { username, password } = req.body;
-
-  console.log(req.body);
   const errors = validator([username, password], ["username", "password"]);
 
   if (errors.length !== 0) {
@@ -56,7 +52,7 @@ const login = (req, res) => {
   db.query(
     "SELECT * FROM user WHERE username = ?",
     [username],
-    async (err, result) => {
+    async (_, result) => {
       try {
         if (result?.length === 1) {
           console.log(result[0]);
@@ -113,6 +109,7 @@ const me = (req, res) => {
   db.query("SELECT * FROM user WHERE id = ?", [id], (err, result) => {
     if (result.length === 1) {
       user = { username: result[0].username, id: result[0].id, status: true };
+      console.log(user);
       res.send({ user });
     } else if (err) {
       res.status(500).send({ err });

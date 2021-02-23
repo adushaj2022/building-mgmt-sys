@@ -76,12 +76,7 @@ const Login = (props) => {
                   />
                 </Box>
 
-                <Button
-                  type="submit"
-                  mt={3}
-                  colorScheme="twitter"
-                  isLoading={isSubmitting}
-                >
+                <Button type="submit" mt={3} isLoading={isSubmitting}>
                   Submit
                 </Button>
                 <Text

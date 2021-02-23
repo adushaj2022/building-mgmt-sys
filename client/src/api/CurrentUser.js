@@ -3,10 +3,11 @@ import AXIOS from "./axios";
 export const CurrentUser = async () => {
   try {
     const response = await AXIOS.get("/user");
-    if (!response.data?.status) {
+    if (response.data?.user?.status) {
+      return response.data.user;
+    } else {
       return null;
     }
-    return response.data.user;
   } catch (err) {
     throw err;
   }
