@@ -4,12 +4,16 @@
 <ul>
     <br>
   <b> Backend </b>
+      <br>
+
   <li> Node </li>
   <li> Express </li>
   <li> MySQL </li>
   <li> Redis </li>
   <br>
    <b> Frontend </b>
+     <br>
+
   <li> React (Hooks) </li>
   <li> Chakra UI </li>
 </ul>
